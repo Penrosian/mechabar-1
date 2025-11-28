@@ -30,8 +30,10 @@
 
 		// modules-right
 		"~/.config/waybar/modules/mpris.jsonc",
-		"~/.config/waybar/modules/pulseaudio.jsonc",
+		// "~/.config/waybar/modules/pulseaudio.jsonc",
+		"~/.config/waybar/modules/extras/wireplumber.jsonc",
 		"~/.config/waybar/modules/backlight.jsonc",
+		"~/.config/waybar/modules/custom/power_profile.jsonc",
 		"~/.config/waybar/modules/battery.jsonc",
 		"~/.config/waybar/modules/custom/power_menu.jsonc",
 
@@ -40,7 +42,6 @@
 		// modules that are not included by default:
 		// "~/.config/waybar/modules/extras/taskbar.jsonc",
 		// "~/.config/waybar/modules/extras/tray.jsonc",
-		// "~/.config/waybar/modules/extras/wireplumber.jsonc"
 	],
 
 	/*------------
@@ -48,14 +49,16 @@
 	------------*/
 
 	"modules-left": [
-		"group/user",
-		"custom/left_div#1",
-		"hyprland/workspaces",
+		// "group/user",
+		// "custom/left_div#1",
+		// "hyprland/workspaces"
+		"custom/power_profile",
+		"battery",
 		"custom/right_div#1",
-		"hyprland/window"
+		"hyprland/window",
 	],
 	"modules-center": [
-		"hyprland/windowcount",
+		// "hyprland/windowcount",
 		"custom/left_div#2",
 		"temperature",
 		"custom/left_div#3",
@@ -67,7 +70,7 @@
 		"custom/distro",
 		"custom/right_div#2",
 		"custom/right_inv#1",
-		"idle_inhibitor",
+		// "idle_inhibitor",
 		"clock#time",
 		"custom/right_div#3",
 		"clock#date",
@@ -78,15 +81,14 @@
 		"custom/right_div#5"
 	],
 	"modules-right": [
-		"mpris",
+		// "group/pulseaudio",
 		"custom/left_div#6",
-		"group/pulseaudio",
+		"group/wireplumber",
 		"custom/left_div#7",
 		"backlight",
 		"custom/left_div#8",
-		"battery",
 		"custom/left_inv#2",
-		"custom/power_menu"
+		"custom/power_menu",
 	],
 
 	/*-------------
@@ -96,7 +98,7 @@
 	// "expand-center":
 	// "expand-left":
 	// "expand-right":
-	"layer": "top",
+	"layer": "bottom",
 	// "output":
 	// "position":
 	"height": 0,
