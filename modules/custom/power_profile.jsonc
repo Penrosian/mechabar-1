@@ -1,0 +1,11 @@
+{
+    "custom/power_profile": {
+        "exec": "~/.config/waybar/scripts/power-profile.sh g",
+        "interval": 1,
+        "min-length": 14,
+        "max-length": 14,
+        "format": "{}",
+        "on-scroll-down": "~/.config/waybar/scripts/power-profile.sh i",
+		"on-scroll-up": "~/.config/waybar/scripts/power-profile.sh d"
+    }
+}
