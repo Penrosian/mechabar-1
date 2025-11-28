@@ -49,6 +49,7 @@
 	------------*/
 
 	"modules-left": [
+
 		// "group/user",
 		// "custom/left_div#1",
 		// "hyprland/workspaces"
@@ -98,7 +99,7 @@
 	// "expand-center":
 	// "expand-left":
 	// "expand-right":
-	"layer": "bottom",
+	"layer": "top",
 	// "output":
 	// "position":
 	"height": 0,
