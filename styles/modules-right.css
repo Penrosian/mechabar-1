@@ -35,8 +35,8 @@
 -------------*/
 
 #custom-left_div.8 {
-	background-color: @battery;
-	color: @battery;
+	background-color: @backlight;
+	color: @main-bg;
 }
 #custom-power_profile {
 	background-color: @workspaces;
@@ -45,7 +45,7 @@
 	background-color: @workspaces;
 }
 #custom-left_inv.2 {
-	color: @battery;
+	color: @backlight;
 }
 
 /*----------------

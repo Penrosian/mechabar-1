@@ -53,9 +53,9 @@
 		// "group/user",
 		// "custom/left_div#1",
 		// "hyprland/workspaces"
-		"custom/power_profile",
-		"battery",
-		"custom/right_div#1",
+		// "custom/power_profile",
+		// "battery",
+		// "custom/right_div#1",
 		"hyprland/window",
 	],
 	"modules-center": [
@@ -76,7 +76,7 @@
 		"custom/right_div#3",
 		"clock#date",
 		"custom/right_div#4",
-		"network",
+		// "network",
 		"bluetooth",
 		"custom/system_update",
 		"custom/right_div#5"
@@ -85,10 +85,10 @@
 		// "group/pulseaudio",
 		"custom/left_div#6",
 		"group/wireplumber",
-		"custom/left_div#7",
-		"backlight",
+		// "custom/left_div#7",
+		// "backlight",
 		"custom/left_div#8",
-		"custom/left_inv#2",
+		// "custom/left_inv#2",
 		"custom/power_menu",
 	],
 
