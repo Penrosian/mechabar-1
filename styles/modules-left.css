@@ -12,7 +12,7 @@
 
 #custom-left_div.1,
 #custom-right_div.1 {
-	color: @workspaces;
+	color: @tray;
 }
 #workspaces {
 	padding: 0 1px;
