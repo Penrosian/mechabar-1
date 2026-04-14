@@ -26,7 +26,7 @@
 		"~/.config/waybar/modules/clock.jsonc",
 		"~/.config/waybar/modules/network.jsonc",
 		"~/.config/waybar/modules/bluetooth.jsonc",
-		"~/.config/waybar/modules/custom/system_update.jsonc",
+		// "~/.config/waybar/modules/custom/system_update.jsonc",
 
 		// modules-right
 		"~/.config/waybar/modules/mpris.jsonc",

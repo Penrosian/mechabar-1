@@ -17,12 +17,9 @@ fcconf=()
 
 main() {
 	local list=(
-		'Lock'
 		'Shutdown'
 		'Reboot'
 		'Logout'
-		'Hibernate'
-		'Suspend'
 	)
 	local opts=(
 		'--border=sharp'
@@ -38,12 +35,9 @@ main() {
 	local selected
 	selected=$(printf '%s\n' "${list[@]}" | fzf "${opts[@]}")
 	case $selected in
-		'Lock') loginctl lock-session ;;
-		'Shutdown') systemctl poweroff ;;
-		'Reboot') systemctl reboot ;;
-		'Logout') loginctl terminate-session "$XDG_SESSION_ID" ;;
-		'Hibernate') systemctl hibernate ;;
-		'Suspend') systemctl suspend ;;
+		'Shutdown') hyprshutdown -t 'Shutting down...' --post-cmd 'shutdown -P 0';;
+		'Reboot') hyprshutdown -t 'Restarting...' --post-cmd 'reboot' ;;
+		'Logout') hyprshutdown ;;
 		*) exit 1 ;;
 	esac
 }

@@ -103,9 +103,7 @@ set-volume() {
 	pactl "set-$dev_vol" "$dev" "${new_vol}%"
 
 	local icon
-	icon=$(get-icon "$new_vol")
-
-	notify-send "$title: ${new_vol}%" -h int:value:$new_vol -i "$icon" -r 2425
+	icon=$(get-icon "$new_vol") 2425
 }
 
 main() {
